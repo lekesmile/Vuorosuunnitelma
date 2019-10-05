@@ -5,7 +5,7 @@ import Header from './component/Header';
 import { Route, Switch } from 'react-router-dom'
 import Livedemo from './routes/Livedemo'
 import Partner from './routes/Partner'
-import Signup from './routes/Signup'
+import Signup from './component/Signup'
 import Product from './routes/Product'
 import Pricing from './routes/Pricing'
 import NotFound from './routes/NotFound'
