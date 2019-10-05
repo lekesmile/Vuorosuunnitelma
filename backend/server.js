@@ -1,6 +1,8 @@
+require('./dbConn')
 const express = require('express')
 const bodyParser = require('body-parser')
-const login = require('./routes/Auth')
+const signup = require('./routes/Signup')
+
 
 
 
@@ -13,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 
-app.use(login)
+app.use(signup)
 
 
 
@@ -25,6 +27,5 @@ app.use(login)
 
 
 const port = process.env.PORT || 3000
-
 
 app.listen(port, () => console.log(`Port app listening on port ${port}`))
